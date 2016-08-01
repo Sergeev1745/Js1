@@ -1,6 +1,12 @@
 var firstNum = prompt('Введите число');
-console.log('число= ', firstNum);
 var secondNum = prompt('Введите степень');
-console.log('степень= ', secondNum);
 var result = Math.pow(firstNum, secondNum);
+if (isNaN(firstNum) || isNaN(secondNum)) {
+	alert('Вы ввели не числовое значение')
+} else if (firstNum == '' || secondNum == ''){
+	alert('Вы  не ввели значение')
+} else {
+console.log('число= ', firstNum);
+console.log('степень= ', secondNum);
 console.log('результат= ', result);
+}
